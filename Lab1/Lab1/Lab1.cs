@@ -18,6 +18,7 @@ namespace Lab1
             return true;
         }
 
+
         static void Main(string[] args)
         {
             /*Point p = new Point();

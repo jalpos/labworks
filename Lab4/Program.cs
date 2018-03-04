@@ -78,7 +78,7 @@ namespace Serialization
             string s = Console.ReadLine();
             string[] token = s.Split();
             Complex result = new Complex(0, 0);
-            for (int t = 0; t < token.Length, t++)
+            for (int t = 0; t < token.Length; t++)
             {
                 string[] arr = t.Split('/');
 
@@ -112,8 +112,8 @@ namespace Serialization
             fs.Close();
             Console.WriteLine("Обьект сериализован");
         }
-     }
-
     }
+
 }
+
 

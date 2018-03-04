@@ -14,7 +14,7 @@ namespace Snake
         public ConsoleColor color;
         public void ReadLevel(int level)
         {
-            StreamReader sr = new StreamReader(@"/Users/Farkhat_Sarsekeyev/Desktop/C#/Snake/level/level" + level + ".txt"); // Считываем наш файл с уровнем
+            StreamReader sr = new StreamReader(@"/Users/Farkhat_Sarsekeyev/Desktop/C#/labworks/Snake/level/level" + level + ".txt"); // Считываем наш файл с уровнем
             int n = int.Parse(sr.ReadLine()); // В нашем файле на 1ой строке будет число рядов
             for (int i = 0; i < n; i++) // Проходимся по этому числу
             {

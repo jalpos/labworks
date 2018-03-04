@@ -4,8 +4,8 @@ namespace Lab1
     public class Circle
     {
         public int radius;
-        public Circle(int _radius){
-            this.radius = _radius;
+        public Circle(int radius){
+            this.radius = radius;
 
         }
         public float FindArea()

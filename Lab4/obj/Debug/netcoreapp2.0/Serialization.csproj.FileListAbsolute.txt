@@ -9,3 +9,9 @@
 /Users/Farkhat_Sarsekeyev/Projects/Serialization/Serialization/obj/Debug/netcoreapp2.0/Serialization.AssemblyInfo.cs
 /Users/Farkhat_Sarsekeyev/Projects/Serialization/Serialization/obj/Debug/netcoreapp2.0/Serialization.dll
 /Users/Farkhat_Sarsekeyev/Projects/Serialization/Serialization/obj/Debug/netcoreapp2.0/Serialization.pdb
+/Users/Farkhat_Sarsekeyev/Desktop/C#/labworks/Lab4/obj/Debug/netcoreapp2.0/Serialization.csprojResolveAssemblyReference.cache
+/Users/Farkhat_Sarsekeyev/Desktop/C#/labworks/Lab4/obj/Debug/netcoreapp2.0/Serialization.csproj.CoreCompileInputs.cache
+/Users/Farkhat_Sarsekeyev/Desktop/C#/labworks/Lab4/obj/Debug/netcoreapp2.0/Serialization.AssemblyInfoInputs.cache
+/Users/Farkhat_Sarsekeyev/Desktop/C#/labworks/Lab4/obj/Debug/netcoreapp2.0/Serialization.AssemblyInfo.cs
+/Users/Farkhat_Sarsekeyev/Desktop/C#/labworks/Lab4/obj/Debug/netcoreapp2.0/Serialization.dll
+/Users/Farkhat_Sarsekeyev/Desktop/C#/labworks/Lab4/obj/Debug/netcoreapp2.0/Serialization.pdb

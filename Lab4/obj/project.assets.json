@@ -2279,11 +2279,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Farkhat_Sarsekeyev/Projects/Serialization/Serialization/Serialization.csproj",
+      "projectUniqueName": "/Users/Farkhat_Sarsekeyev/Desktop/C#/labworks/Lab4/Serialization.csproj",
       "projectName": "Serialization",
-      "projectPath": "/Users/Farkhat_Sarsekeyev/Projects/Serialization/Serialization/Serialization.csproj",
+      "projectPath": "/Users/Farkhat_Sarsekeyev/Desktop/C#/labworks/Lab4/Serialization.csproj",
       "packagesPath": "/Users/Farkhat_Sarsekeyev/.nuget/packages/",
-      "outputPath": "/Users/Farkhat_Sarsekeyev/Projects/Serialization/Serialization/obj",
+      "outputPath": "/Users/Farkhat_Sarsekeyev/Desktop/C#/labworks/Lab4/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
