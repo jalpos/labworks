@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Reflection;
 namespace midterm2
 {
     class Program
     {
-        public static Packman p;
-        public static ReadFiles a;
+        public static Packman p = new Packman();
+        public static ReadFiles a = new ReadFiles();
         static int direction = 2;
-        //static bool gameOver = false;
-
+        public static int score = 0;
+        public static bool gameOver = false;
 
         static void playGame()
         {
             while (true)
             {
-                
                 if (direction == 1)
                     p.Left();
                 if (direction == 2)
@@ -26,42 +26,45 @@ namespace midterm2
                     p.Up();
                 if (direction == 4)
                     p.Down();
+
                 Console.Clear();
 
                 p.Draw();
                 a.DrawWall();
                 a.DrawFruit();
-                if (p.CollisionWithWall(a.points))
+
+                if (p.CollisionWithWall(a))
                 {
-                    p.Move(0, 0);
-                    
+                    //Console.SetCursorPosition(p.body[0].x - 1, p.body[0].y - 1);
+                    p.Draw();
+                    //Thread.CurrentThread.Abort();
+                    //p.Wait(p.body[0].x, p.body[0].y);
+                    Console.ReadKey();
+                    //Thread.CurrentThread.;
                 }
-                if (p.CollisionWithFood(a.fruit))
+                if (p.CollisionWithFood(a))
                 {
-                    
-                    
-                    
+                    p.EatFruit(a);
+                    score++;
+                    //for (int i = 0; i < a.fruit.Count; i++)
                 }
 
-                //Console.WriteLine("HI");
                 Thread.Sleep(1000);
             }
+
         }
 
-        public static int score = 0;
+
         static void Main(string[] args)
         {
-
-            p = new Packman();
-            a = new ReadFiles();
             a.ReadWall();
-
 
             Console.CursorVisible = false;
             Thread thread = new Thread(playGame);
             thread.Start();
 
-            while (true)
+
+            while (!gameOver)
             {
                 ConsoleKeyInfo keyInfo = Console.ReadKey();
                 if (keyInfo.Key == ConsoleKey.UpArrow)
@@ -73,8 +76,17 @@ namespace midterm2
                 if (keyInfo.Key == ConsoleKey.RightArrow)
                     direction = 2;
                 if (keyInfo.Key == ConsoleKey.Escape)
-                    break;
+                {
+                    //thread.Abort();
+                    Console.Clear();
+                    Console.Write("final score: " + score);
+                    Console.ReadKey();
+                    gameOver = true;
+
+                }
+
             }
+
 
         }
 

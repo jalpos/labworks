@@ -9,7 +9,7 @@ namespace midterm2
     {
 
         public List<Point> points;
-        public List<Point> fruit = new List<Point>();
+        public List<Point> fruit;
 
         public ReadFiles()
         {
@@ -43,6 +43,7 @@ namespace midterm2
             }
         }
 
+           
         public void DrawWall()
         {
             foreach (Point p in points)

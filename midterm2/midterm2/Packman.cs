@@ -18,13 +18,13 @@ namespace midterm2
             body = new List<Point>();
 
         }
-        public void Move(int dx, int dy)
+        /*public void Wait(int dx, int dy)
         {
 
-            body[0].x += dx;
-            body[0].y += dy;
+            body[0].x -= dx;
+            body[0].y -= dy;
        
-        }
+        }*/
 
         public void Up()
         {
@@ -46,23 +46,39 @@ namespace midterm2
 
         }
 
-        public bool CollisionWithWall(List<Point> p)
+        public bool CollisionWithWall(ReadFiles g)
         {
-            foreach (Point a in p.points)
+            foreach (Point a in g.points)
             {
                 if (a.x == body[0].x && a.y == body[0].y)
                     return true;
-                return false;
             }
+            return false;
+
         }
-        public bool CollisionWithFood(List<Point> p)
+        public bool CollisionWithFood(ReadFiles g)
         {
-            foreach (Point a in p.fruit)
+            foreach (Point a in g.fruit)
             {
                 if (a.x == body[0].x && a.y == body[0].y)
+                    
                     return true;
-                return false;
             }
+            return false;
+            
+        }
+        public void EatFruit(ReadFiles g)
+        {
+            foreach (Point a in g.fruit)
+            {
+                if (a.x == body[0].x && a.y == body[0].y)
+                {
+                    a.x = char.Parse(" ");
+                    a.y = char.Parse(" ");
+                    g.DrawFruit();
+                }
+                
+            }            
         }
 
         public void Draw()
